@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import clientPromise from '../lib/mongodb'
 import { InferGetServerSidePropsType } from 'next'
+import Link from 'next/link'
 
 export async function getServerSideProps(context) {
   try {
@@ -36,6 +37,7 @@ export default function Home({
       </Head>
 
       <main>
+        <Link href="Get">GET</Link>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js with MongoDB!</a>
         </h1>
