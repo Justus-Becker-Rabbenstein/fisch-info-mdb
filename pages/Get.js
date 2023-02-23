@@ -16,9 +16,19 @@ const Get = () => {
     }, []);
 
     return (
-        <div>Get
-            <button onClick={console.log(apiData)}>showApiData</button>
-        </div>
+        <>
+        {apiData.map((getApiSingleData) => {
+            return (
+                <div key={getApiSingleData._id}>
+                <p>Name: {getApiSingleData.name}</p>
+                <p>Gattung : {getApiSingleData.gattung}</p>
+                <p>Wasser: {getApiSingleData.wasser}</p>
+                <img src={getApiSingleData.pictureurl} alt={getApiSingleData.name} />
+                </div>
+            )
+        })
+    }
+        </>
     )
 }
 
