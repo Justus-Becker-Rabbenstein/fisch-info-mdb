@@ -1,3 +1,6 @@
+# Tech Stack
+Next.js, React (HTML, styled-components, JavaScript), MongoDB
+
 ## MongoDB fisch-info
 uses localhost MongoDB to provide information
 
